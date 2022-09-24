@@ -1,0 +1,38 @@
+.agreement__title {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.agreement {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.agreement__icon--checked {
+  opacity: 0;
+
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: var(--t-t-f);
+}
+
+.agreement__icon--unchecked {
+  opacity: 1;
+
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: var(--t-t-f);
+}
+
+.agreement__checkbox:checked + .agreement__icon > .agreement__icon--unchecked {
+  opacity: 0;
+}
+
+.agreement__checkbox:checked + .agreement__icon > .agreement__icon--checked {
+  opacity: 1;
+}
+
+.contract {
+  color: var(--accent-color);
+}
