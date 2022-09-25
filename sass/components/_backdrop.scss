@@ -12,11 +12,11 @@
   transition-property: opacity, scale, visibility;
   transition-duration: 250ms;
   transition-timing-function: var(--t-t-f);
-}
 
-.backdrop.is-hidden {
-  opacity: 0;
-  scale: 0.5;
-  pointer-events: none;
-  visibility: hidden;
+  &.is-hidden {
+    opacity: 0;
+    scale: 0.5;
+    pointer-events: none;
+    visibility: hidden;
+  }
 }

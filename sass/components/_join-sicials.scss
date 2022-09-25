@@ -14,8 +14,9 @@
 
 .join .socials__link {
   background-color: rgba(255, 255, 255, 0.1);
-}
-.join .socials__link:hover,
-.join .socials__link:focus {
-  background-color: var(--accent-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }

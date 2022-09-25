@@ -1,11 +1,3 @@
-.project__link {
-  display: block;
-  border: 1px solid #eeeeee;
-
-  transition-property: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: var(--t-t-f);
-}
 .project__list {
   padding-left: 0px;
   margin-top: 50px;
@@ -18,11 +10,27 @@
 .project__item {
   width: 370px;
 }
-.project__link:hover,
-.project__link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+
+.project__link {
+  display: block;
+  border: 1px solid #eeeeee;
+
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: var(--t-t-f);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
+  &:hover .project__backdrop,
+  &:focus .project__backdrop {
+    transform: translateY(0%);
+  }
 }
+
 .project__thumb {
   position: relative;
 
@@ -45,11 +53,6 @@
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: var(--t-t-f);
-}
-
-.project__link:hover .project__backdrop,
-.project__link:focus .project__backdrop {
-  transform: translateY(0%);
 }
 
 .project__discripnion {

@@ -1,17 +1,18 @@
-.logo__link {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: calc(31 / 26);
-  letter-spacing: 0.03em;
-  color: var(--accent-color);
-}
+.logo {
+  &__link {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+  }
+  &__deko--black {
+    color: black;
+  }
 
-.logo__deko--black {
-  color: black;
-}
-
-.logo__deko--white {
-  color: var(--accent-font-color);
+  &__deko--white {
+    color: var(--accent-font-color);
+  }
 }

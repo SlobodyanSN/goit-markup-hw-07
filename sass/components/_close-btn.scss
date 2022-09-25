@@ -18,12 +18,13 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: var(--t-t-f);
-}
-.close-btn__icon {
-  fill: currentColor;
-}
 
-.close-btn:hover,
-.close-btn:focus {
-  color: var(--accent-color);
+  &__icon {
+    fill: currentColor;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }

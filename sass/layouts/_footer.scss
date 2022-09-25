@@ -2,8 +2,9 @@
   background: var(--aсcent-bgn);
   padding-top: 60px;
   padding-bottom: 60px;
-}
-.footer--flex {
-  display: flex;
-  align-items: baseline;
+
+  &--flex {
+    display: flex;
+    align-items: baseline;
+  }
 }

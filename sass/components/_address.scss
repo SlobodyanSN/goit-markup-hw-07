@@ -5,6 +5,9 @@
 .address__item:not(:last-child) {
   margin-bottom: 9px;
 }
+.address__icon {
+  fill: var(--accent-font-color);
+}
 
 .address__mail-link,
 .address__tel-link,
@@ -18,6 +21,11 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: var(--t-t-f);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 .address__mail-link,
 .address__tel-link {
@@ -27,15 +35,10 @@
   transition-duration: 250ms;
   transition-timing-function: var(--t-t-f);
 }
-.address__link:hover,
-.address__link:focus,
+
 .address__mail-link:hover,
 .address__mail-link:focus,
 .address__tel-link:hover,
 .address__tel-link:focus {
   color: var(--accent-color);
-}
-
-.address__icon {
-  fill: var(--accent-font-color);
 }

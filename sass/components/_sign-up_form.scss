@@ -31,22 +31,3 @@
 .sign-up__input::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
-.sign-up__btn {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-left: 12px;
-  margin-right: 0px;
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: calc(30 / 16);
-  letter-spacing: 0.06em;
-  color: var(--accent-font-color);
-  background-color: var(--accent-color);
-  padding: 10px 28px;
-
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-  border: none;
-}

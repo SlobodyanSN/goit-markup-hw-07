@@ -32,6 +32,13 @@
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: var(--t-t-f);
+
+  &:focus + .form__icon {
+    color: var(--accent-color);
+  }
+  &:focus {
+    border-color: #2196f3;
+  }
 }
 
 .form__icon {
@@ -44,12 +51,7 @@
   transition-duration: 250ms;
   transition-timing-function: var(--t-t-f);
 }
-.form__input:focus + .form__icon {
-  color: var(--accent-color);
-}
-.form__input:focus {
-  border-color: #2196f3;
-}
+
 .form__input--txt {
   resize: none;
   height: 120px;
@@ -62,8 +64,8 @@
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: var(--t-t-f);
-}
 
-.form__input--txt:focus {
-  border-color: #2196f3;
+  &:focus {
+    border-color: #2196f3;
+  }
 }
